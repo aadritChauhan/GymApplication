@@ -1,0 +1,10 @@
+﻿@model IEnumerable<GymApplication_new.Models.WeekdayDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+@foreach(var weekday in Model)
+            {
+                <h2>Weekday: @weekday.WeekdayName</h2>
+            }
