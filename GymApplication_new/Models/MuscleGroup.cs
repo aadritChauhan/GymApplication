@@ -20,4 +20,10 @@ namespace GymApplication_new.Models
 
         public virtual Weekday Weekday { get; set; }
     }
+    public class MuscleGroupDto
+    {
+        public int MuscleGroupId { get; set; }
+        public string MuscleGroupName { get; set; }
+        public string Exercises { get; set; }
+    }
 }

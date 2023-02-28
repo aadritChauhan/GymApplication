@@ -1,0 +1,15 @@
+﻿@model IEnumerable<GymApplication_new.Models.MuscleGroupDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+<a href="/MuscleGroup/New">New Muscle Group</a>
+@foreach (var muscleGroup in Model)
+            {
+                <h2><a href="/MuscleGroup/Details/@muscleGroup.MuscleGroupId">@muscleGroup.MuscleGroupName</a></h2>
+                <h2>Muscle: @muscleGroup.MuscleGroupName</h2>
+                <div>Exercise :@muscleGroup.Exercises</div>
+            }
+
+ 
